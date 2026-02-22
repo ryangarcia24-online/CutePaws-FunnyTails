@@ -29,26 +29,25 @@ h1, h2, h3, .navbar-brand, .btn-lg {
 
 /* --- 3. Navigation --- */
 .navbar {
-    /* Set to transparent - no color at all */
-    background-color: transparent !important; 
-    
-    /* Optional: Remove the blur if you want it perfectly clear */
-    /* If you keep the blur, it will look like a "distorted" window */
-    backdrop-filter: none; 
-    -webkit-backdrop-filter: none; 
-    
-    /* Remove the border to ensure there's no visible line at the bottom */
-    border-bottom: none;
-    
+
+    /* 0.0 at the end makes it fully clear; 0.6 adds a soft white tint */
+    background-color: rgba(255, 255, 255, 0.4) !important; 
+
+    /* This creates a beautiful frosted glass effect */
+    backdrop-filter: blur(8px); 
+    -webkit-backdrop-filter: blur(8px); 
+
+    /* Remove the harsh border and use a very soft one instead */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
     /* Keeps the navbar floating at the top */
     position: sticky;
     top: 0;
     z-index: 1000;
-    
     padding: 1rem 2rem;
     transition: background-color 0.3s ease;
-}
 
+}
 .nav-link {
     color: #4A3728 !important; /* Dark Cocoa Brown for readability */
     font-weight: 700;
