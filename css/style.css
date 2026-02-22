@@ -29,34 +29,21 @@ h1, h2, h3, .navbar-brand, .btn-lg {
 
 /* --- 3. Navigation --- */
 .navbar {
-
-    /* 0.0 at the end makes it fully clear; 0.6 adds a soft white tint */
-    background-color: rgba(255, 255, 255, 0.4) !important; 
-
-    /* This creates a beautiful frosted glass effect */
-    backdrop-filter: blur(8px); 
-    -webkit-backdrop-filter: blur(8px); 
-
-    /* Remove the harsh border and use a very soft one instead */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-
-    /* Keeps the navbar floating at the top */
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    padding: 1rem 2rem;
-    transition: background-color 0.3s ease;
-
+    border-bottom: 1px solid rgba(139, 94, 60, 0.1); 
+    background-color: rgba(255, 255, 255, 0.8) !important; /* Soft white backdrop */
 }
+
 .nav-link {
-    color: #4A3728 !important; /* Dark Cocoa Brown for readability */
+    font-family: 'Quicksand', sans-serif;
     font-weight: 700;
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); /* Helps text pop against busy backgrounds */
+    font-size: 1rem;
+    color: #8B5E3C !important; /* Warm terracotta brown */
+    transition: all 0.3s ease;
 }
 
 .nav-link:hover {
-    color: #F2A2A2 !important; /* Rose Pink hover */
-    text-shadow: none;
+    color: #F2A2A2 !important; /* Soft Rose Pink from the hearts */
+    transform: translateY(-1px);
 }
 
 /* --- 4. Body Text & Labels --- */
@@ -92,3 +79,17 @@ strong, .contact-info p {
     transform: scale(1.05);
 }
 
+/* Back to top button */
+#scrollTopBtn {
+    background-color: #A67C52;
+    border-radius: 50%;
+}
+
+.contact-info a {
+    color: #F2A2A2;
+    font-weight: 700;
+}
+
+.contact-info a:hover {
+    color: #8B5E3C;
+}
