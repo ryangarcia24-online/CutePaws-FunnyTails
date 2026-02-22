@@ -1,0 +1,94 @@
+/* --- 1. Global Styles & Background --- */
+body {
+    /* Changing font to Quicksand: Rounded, friendly, and very readable */
+    font-family: 'Quicksand', sans-serif;
+    background-image: url(../images/background.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* Soft dark brown instead of pure black for a warmer feel */
+    color: #4A3728; 
+    letter-spacing: 0.2px;
+}
+
+/* --- 2. Header & Main Titles --- */
+/* Replacing Orbitron with Fredoka: A bold, bubbly font perfect for pets */
+h1, h2, h3, .navbar-brand, .btn-lg {
+    font-family: 'Fredoka', sans-serif; 
+    text-transform: none; /* Removed uppercase for a friendlier tone */
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+/* Updated Welcome Title: Removing the neon "Cyber" glow */
+.display-4 {
+    font-weight: 700;
+    color: #5D4037; /* Deep Cocoa Brown */
+    text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.8); /* Simple clean lift */
+}
+
+/* --- 3. Navigation --- */
+.navbar {
+    /* 0.0 at the end makes it fully clear; 0.6 adds a soft white tint */
+    background-color: rgba(255, 255, 255, 0.4) !important; 
+    
+    /* This creates a beautiful frosted glass effect */
+    backdrop-filter: blur(8px); 
+    -webkit-backdrop-filter: blur(8px); 
+    
+    /* Remove the harsh border and use a very soft one instead */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    
+    /* Keeps the navbar floating at the top */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
+    padding: 1rem 2rem;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link {
+    color: #4A3728 !important; /* Dark Cocoa Brown for readability */
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); /* Helps text pop against busy backgrounds */
+}
+
+.nav-link:hover {
+    color: #F2A2A2 !important; /* Rose Pink hover */
+    text-shadow: none;
+}
+
+/* --- 4. Body Text & Labels --- */
+.lead {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+    color: #5D4037;
+}
+
+/* Replacing "Computer Data" look with a clean script-style or soft sans */
+strong, .contact-info p {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: #A67C52; /* Medium Tan */
+    text-transform: none;
+}
+
+/* --- 5. Buttons & Interactions --- */
+.btn-lg {
+    border: none;
+    background: #F2A2A2 !important; /* Rose Pink */
+    color: white !important;
+    border-radius: 50px; /* Fully rounded pill shape */
+    padding: 12px 30px;
+    transition: all 0.4s;
+}
+
+.btn-lg:hover {
+    background: #E58E8E !important; /* Slightly darker pink */
+    box-shadow: 0 5px 15px rgba(242, 162, 162, 0.4);
+    transform: scale(1.05);
+}
+
