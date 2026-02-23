@@ -46,6 +46,16 @@ h1, h2, h3, .navbar-brand, .btn-lg {
     transform: translateY(-1px);
 }
 
+.navbar-toggler-icon {
+    /* This creates a brown-ish hue from the default white icon */
+    filter: invert(24%) sepia(85%) saturate(1200%) hue-rotate(350deg) brightness(90%) contrast(90%);
+}
+
+/* Optional: Change the border color of the button too */
+.navbar-toggler {
+    border-color: #8B4513 !important; 
+}
+
 /* --- 4. Body Text & Labels --- */
 .lead {
     font-family: 'Quicksand', sans-serif;
