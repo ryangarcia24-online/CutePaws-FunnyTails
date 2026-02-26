@@ -89,17 +89,3 @@ strong, .contact-info p {
     transform: scale(1.05);
 }
 
-/* Back to top button */
-#scrollTopBtn {
-    background-color: #A67C52;
-    border-radius: 50%;
-}
-
-.contact-info a {
-    color: #F2A2A2;
-    font-weight: 700;
-}
-
-.contact-info a:hover {
-    color: #8B5E3C;
-}
