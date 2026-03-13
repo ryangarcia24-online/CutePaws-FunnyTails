@@ -28,33 +28,45 @@ h1, h2, h3, .navbar-brand, .btn-lg {
 }
 
 /* --- 3. Navigation --- */
-.navbar {
-    border-bottom: 1px solid rgba(139, 94, 60, 0.1); 
-    background-color: rgba(255, 255, 255, 0.8) !important; /* Soft white backdrop */
-}
+/* Custom Animal Theme Styling */
+    .navbar-cute {
+        background-color: #fffaf0; /* Creamy white */
+        border-bottom: 4px solid #ffcfd2; /* Soft pink border */
+        font-family: 'Quicksand', sans-serif;
+    }
 
-.nav-link {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 700;
-    font-size: 1rem;
-    color: #8B5E3C !important; /* Warm terracotta brown */
-    transition: all 0.3s ease;
-}
+    .navbar-brand {
+        font-family: 'Fredoka One', cursive;
+        color: #ff85a2 !important;
+        font-size: 1.5rem;
+    }
 
-.nav-link:hover {
-    color: #F2A2A2 !important; /* Soft Rose Pink from the hearts */
-    transform: translateY(-1px);
-}
+    /* Make the logo bounce on hover */
+    .navbar-brand img:hover {
+        transform: scale(1.1) rotate(-5deg);
+        transition: 0.3s ease-in-out;
+    }
 
-.navbar-toggler-icon {
-    /* This creates a brown-ish hue from the default white icon */
-    filter: invert(24%) sepia(85%) saturate(1200%) hue-rotate(350deg) brightness(90%) contrast(90%);
-}
+    /* Links look like little buttons/paws */
+    .nav-link {
+        color: #6d4c41 !important; /* Soft brown */
+        border-radius: 20px;
+        padding: 8px 20px !important;
+        transition: all 0.3s;
+        margin: 0 5px;
+    }
 
-/* Optional: Change the border color of the button too */
-.navbar-toggler {
-    border-color: #8B4513 !important; 
-}
+    .nav-link:hover {
+        background-color: #ffcfd2; /* Paw-pink background */
+        color: #fff !important;
+    }
+
+    /* Active state styling */
+    .nav-link.active {
+        background-color: #b9fbc0 !important; /* Soft mint green */
+        color: #2d6a4f !important;
+        font-weight: bold;
+    }
 
 /* --- 4. Body Text & Labels --- */
 .lead {
